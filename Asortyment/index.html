@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Programowanie</title>
+    <meta charset="UTF-8">
+    <meta name="Programowanie" description="Książki poświęcone programowaniu">
+    <script src="script.js"></script>
+    <style>
+        body
+        {
+            background-color:aqua;
+            background-image:url("pexels-markus-spiske-2061168.jpg");
+            color: white;
+            margin: auto;
+        }
+        #container
+        {
+            width: 1920px;
+            height: 2160px;
+            margin: auto;
+            
+        }
+        #ksiazki
+        {
+            width: 1600px;
+            margin: auto;
+            
+        }
+        #container h1
+        {
+            text-align: center;
+            margin-top: 45px;
+        }
+        input
+        {
+            border: 7px double #38b113;
+            text-align:center;
+            margin-top:8px;
+            margin-left:6px;
+            
+        }
+        h2
+        {
+            text-align: center;
+            height: 50px;
+            margin-top:0;
+        }
+        img
+        {
+            margin: 0 auto;
+            display: block;
+            margin-top:0;
+        }
+        div.kolejne
+        {
+            float:left;
+            width: 380px;
+            height: 640px;
+        }
+        div.kolejne3
+        {
+            float:left;
+            width: 380px;
+            height: 640px;
+            color: white;
+            
+        }
+        div.kolejne3 h2
+        {
+            background-color: rgba(0, 0, 0, 0.335);
+            width: 80%;
+            margin-left:10%;
+            
+        }
+     
+       div.cena
+       {
+           width: 300px;
+           margin-left: 55px;
+       }
+       div.cena p
+       {
+           float: left;
+           margin-bottom: 0px;
+
+       }
+       hr{margin-bottom: 45px;}
+       #podsumowanie
+       {
+        position:fixed;
+        top: 90%;
+        right:2%;
+       }
+       #wynik
+       {
+           text-align: center;
+       }
+       #wynik l
+       {
+           margin-left: 8px;
+       };
+       
+    </style>
+
+
+</head>
+
+<body>
+    <div id="container">
+        <h1>Zestawy książek do programowania</h1>
+        <br><br>
+        <div id="ksiazki">
+            <div class="kolejne">
+                <h2>Podręcznik do android studio</h2>
+                <img src="Android studio.jfif">
+                <div class="cena"><p>Cena 30zł</p> <input type="text" id="k1" class="form"></div>
+            </div>
+        
+            <div class="kolejne">
+                <h2>Wprowadzenie do technologii DirectX11</h2>
+                <img src="wprg3d.jfif">
+                <div class="cena">Cena 60zł <input type="text" id="k2" class="form"></div>
+            </div>
+
+            <div class="kolejne">
+                <h2>Podręcznik do nauki Pythona</h2>
+                <img src="pytdk3.jfif">
+                <div class="cena">Cena 41zł <input type="text" id="k3" class="form"></div>
+            </div>
+
+            <div class="kolejne">
+                <h2>Podręcznik do nauki Javy</h2>
+                <img src="javpp8.jfif">
+                <div class="cena">Cena 53zł<input type="text" id="k4" class="form"></div>
+
+            </div>
+            
+            <div style="clear:both;"></div>
+            <hr>
+            <div class="kolejne">
+                <h2>Podręcznik do nauki C++</h2>
+                <img src="opc144.jfif">
+                <div class="cena">Cena 31zł<input type="text" id="k5" class="form"></div>
+
+            </div>
+
+            <div class="kolejne">
+                <h2>Podręcznik pisania dobrych rozwiązań</h2>
+                <img src="czykov.jfif">
+                <div class="cena">Cena 44zł<input type="text" id="k6" class="form"></div>
+
+            </div>
+
+            <div class="kolejne">
+                <h2>Od zarządzania czasem po asertywność</h2>
+                <img src="mckkov.jfif">
+                <div class="cena">Cena 25zł<input type="text" id="k7" class="form"></div>
+
+            </div>
+
+            <div class="kolejne">
+                <h2>Podręcznik architekta oprogramowania</h2>
+                <img src="czarch.jfif">
+                <div class="cena">Cena 43zł<input type="text" id="k8" class="form"></div>
+
+            </div>
+
+            <div style="clear:both;"></div>
+            <hr>
+
+            <div class="kolejne3">
+                <h2>Wzorce projektowe C#/F#</h2>
+                <img src="wzprne.jfif">
+                <div class="cena">Cena 37zł<input type="text" id="k9" class="form"></div>
+
+            </div>
+
+            <div class="kolejne3">
+                <h2>Programowanie arduino</h2>
+                <img src="ardup2.jfif">
+                <div class="cena">Cena 22zł<input type="text" id="k10" class="form"></div>
+
+            </div>
+            
+            <div class="kolejne3">
+                <h2>Tworzenie aplikacji sieciowych</h2>
+                <img src="djpta2.jfif">
+                <div class="cena">Cena 51zł<input type="text" id="k11" class="form"></div>
+
+            </div>
+
+            <div class="kolejne3">
+                <h2>Pisanie i wstawienie asemblera</h2>
+                <img src="asempr.jfif">
+                <div class="cena">Cena 29zł<input type="text" id="k12" class="form"></div>
+
+            </div>
+
+            <div style="clear:both;"></div>
+
+            <div id="podsumowanie">
+                <input type="button" value="oblicz do zapłaty" onclick="zaplac()">
+                <div id ="wynik"><l>Koszt wynosi 0 zł</l></div>
+            </div>
+    
+        
+        </div>
+        
+       
+    
+    </div>
+
+    
+
+</div>
+
+
+
+</body>
+
+
+
+</html>

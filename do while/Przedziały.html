@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Przedziały</title>
+        <style>
+
+        </style>
+
+        <script>
+            function wypisz()
+            {
+                let lmin = document.getElementById("lmin").value;
+                let lmax = document.getElementById("lmax").value;
+                let text = "";
+
+                while(lmin < lmax)
+                {
+                    text += lmin;
+                    lmin++;
+                }
+                document.getElementById("wynik").innerHTML = text;
+            }
+
+
+        </script>
+
+    </head>
+    <body>
+        <div id="container">
+        <input type="text" id="lmin">
+        <input type="text" id="lmax">
+        <input type="button" value="wyślij" onclick="wypisz()">
+
+        <div id="wynik"></div>
+        </div>
+
+
+    </body>
+
+
+
+
+</html>
